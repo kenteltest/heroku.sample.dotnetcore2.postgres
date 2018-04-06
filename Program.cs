@@ -25,7 +25,7 @@ namespace WebApplication4
 			{
 				Console.WriteLine(item);
 			}
-            WebHost.CreateDefaultBuilder(args)
+           return WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .Build();}
     }
