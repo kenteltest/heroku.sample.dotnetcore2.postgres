@@ -18,7 +18,7 @@ namespace WebApplication4
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHost BuildWebHost(string[] args) {
             
 			Console.WriteLine("----!!!!!!!!!!!!!!!!!!!!!!!!----");
 			foreach (var item in args)
@@ -27,6 +27,6 @@ namespace WebApplication4
 			}
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .Build();
+                .Build();}
     }
 }
